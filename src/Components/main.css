@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+ 
+.project
+{
+  text-align: center;
+  display: inline;
+  float: left;
+  border-radius: 20px;
+  color:rgb(3, 76, 78);
+  height: 350px;
+  margin-top: 30px;
+  margin-left: 95px;
+  width: 370px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.TechnicalBox {
+  height: 700px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 1) -3px -3px 6px 1px inset;
+  display: block;
+  border-radius: 50px;
+}
+.ProjectBox
+{
+  height: 1200px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 1) -3px -3px 6px 1px inset;
+  display: block;
+  border-radius: 50px;
+}
+.Skill1 {
+  text-align: center;
+  display: inline;
+  float: left;
+  border-radius: 20px;
+  color:rgb(3, 76, 78);
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 95px;
+  width: 370px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.Profile {
+  height: 450px;
+  width: 300px;
+  margin-top: 40px;
+  margin-right: 100px;
+  float: right;
+  border-radius: 30px;
+}
+img {
+  transition: transform 0.2s;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.textContent {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 900px;
+
+  background: white;
+}
+.wrapper {
+  display: flex;
+}
+.wrapper .static-txt {
+  color: #343f4f;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #fc6d6d;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+.ScrollDown {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  height: 100px;
+  width: 500px;
+}
+.Intro {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 750px;
+  width: 1200px;
+  border-radius: 50px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.scrolldown {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 1007px) {
+  .Profile {
+    margin: auto;
+    width: 300px;
+    border: none;
+    float: none;
+  }
+  .TechnicalBox {
+    height: 800px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 1) -3px -3px 6px 1px inset;
+  
+    border-radius: 50px;
+  }
+  .ProjectBox
+  {
+    height: 1200px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 1) -3px -3px 6px 1px inset;
+  
+    border-radius: 50px;
+  }
+  .project
+  {
+    text-align: center;
+    display: inline;
+    float: left;
+    border-radius: 20px;
+    color: rgb(3, 76, 78);
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 340px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+  
+  .Skill1
+  {
+    text-align: center;
+    display: inline;
+    float: left;
+    border-radius: 20px;
+    color: rgb(3, 76, 78);
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 340px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+  
+  .Intro {
+    height: 1398px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .scrolldown {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  img {
+    border-radius: 50%;
+    margin-top: 40px;
+    box-shadow: 5px 5px lightblue;
+  }
+  .textContent {
+    display: none;
+  }
+  .ScrollDown {
+    margin-top: -50px;
+    height: 150px;
+    width: 150px;
+  }
+}
